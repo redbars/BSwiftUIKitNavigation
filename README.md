@@ -13,7 +13,7 @@ class Navigator: BSwiftUIKitNavigation  {
 }
 ```
 
-### 2. Create Navigator:
+### 2. Create Navigator screens (views):
 ```
 protocol NavigatorProtocol {
     associatedtype View: SwiftUI.View
