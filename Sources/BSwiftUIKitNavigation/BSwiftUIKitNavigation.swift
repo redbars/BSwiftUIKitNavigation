@@ -49,7 +49,7 @@ public extension BSwiftUIKitNavigation {
             }
             
             viewController
-                .modalPresentationStyle = .overCurrentContext
+                .modalPresentationStyle = .fullScreen
             
             presentedVC
                 .present(viewController, animated: animated)
