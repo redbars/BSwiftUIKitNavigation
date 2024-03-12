@@ -10,22 +10,22 @@ public protocol BSwiftUIKitNavigation: ObservableObject {
 
 //View
 public extension BSwiftUIKitNavigation {
-    func presentViewFullScreen(_ view: AnyView, animated: Bool = true) {
+    func presentViewFullScreen(_ view: some View, animated: Bool = true) {
         let controller = DestinationHostingController(rootView: view)
         presentFullScreen(controller, animated: animated)
     }
     
-    func presentView(_ view: AnyView, animated: Bool = true) {
+    func presentView(_ view: some View, animated: Bool = true) {
         let controller = DestinationHostingController(rootView: view)
         present(controller, animated: animated)
     }
     
-    func pushView(_ view: AnyView, animated: Bool = true) {
+    func pushView(_ view: some View, animated: Bool = true) {
         let controller = DestinationHostingController(rootView: view)
         pushViewController(controller, animated: animated)
     }
     
-    func replaceView(_ view: AnyView, animated: Bool = true) {
+    func replaceView(_ view: some View, animated: Bool = true) {
         let controller = DestinationHostingController(rootView: view)
         replaceViewController(controller, animated: animated)
     }
