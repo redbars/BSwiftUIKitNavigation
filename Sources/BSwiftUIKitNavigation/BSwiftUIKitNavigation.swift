@@ -209,6 +209,8 @@ private extension BSwiftUIKitNavigation {
             
             if let nvc = children as? UINavigationController {
                 return nvc
+            } else if let tab = (children as? UITabBarController)?.selectedViewController  {
+                return getNavigationViewController(tab)
             } else {
                 return getNavigationViewController(children)
             }
